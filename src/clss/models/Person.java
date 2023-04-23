@@ -1,4 +1,4 @@
-package clss;
+package clss.models;
 
 public abstract class Person
 {
@@ -24,23 +24,24 @@ public abstract class Person
     public String getLname() {
         return lname;
     }
-    public void setLname(String lname) {
-        this.lname = lname;
-    }
     public String getFname() {
         return fname;
-    }
-    public void setFname(String fname) {
-        this.fname = fname;
     }
     public int getAge() {
         return age;
     }
-    public void setAge(int age) {
-        this.age = age;
-    }
     public String getCountry() {
         return country;
+    }
+
+    public void setLname(String lname) {
+        this.lname = lname;
+    }
+    public void setFname(String fname) {
+        this.fname = fname;
+    }
+    public void setAge(int age) {
+        this.age = age;
     }
     public void setCountry(String country) {
         this.country = country;
@@ -49,6 +50,16 @@ public abstract class Person
     /** OTHERS **/
     public abstract boolean focusing(int e);
     public abstract boolean travelling(int e);
+
+
+
+    @Override
+    public String toString()
+    {
+        return "\n>Apellido/Nombre: "+lname+" "+fname+
+               ".\n>Edad: "+age+
+               ".\n>Nacionalidad: "+country+".";
+    }
 
 
 }
