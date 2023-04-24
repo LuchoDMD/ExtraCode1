@@ -17,7 +17,7 @@ public class Trainer extends Person
     public Trainer(String lname, String fname, int age, String country, Trainer t)
     {
         super(lname, fname, age, country);
-        this.age = t.age;
+        this.exp=t.exp;
     }
 
     /** GETTERS & SETTERS **/

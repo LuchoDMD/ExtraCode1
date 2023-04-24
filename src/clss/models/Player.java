@@ -42,7 +42,7 @@ public class Player extends Person
     public void setRol(String rol) {
         this.rol = rol;
     }
-    public void setWins(int vict) {
+    public void setWins(int wins) {
         this.wins = wins;
     }
     
